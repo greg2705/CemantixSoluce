@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+	  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+ 
+	</head>
+     
+	<body>
+        <div class="title"> Cemantix Solution </div>
+        
+        <div class="mask"> 
+             <p class="soluce"> Le mot du jour est : {{mot}} </p>   
+             <form method="post" action="{{url_for('index')}}"><input type="submit" value="Afficher/Masquer la solution" class="bouton" name="bouton"> 
+             </form>
+        </div>
+        <a href="https://github.com/greg2705" class="github" target="_blank"> Github : @greg2705 </a>
+        <a href="https://www.kaggle.com/gregremy" class="github" target="_blank"> Kaggle : @Greg Remy</a>
+        <a href="https://www.linkedin.com/in/gregoireremy/" class="github" target="_blank"> LinkedIn : Grégoire Remy </a>
+	</body>
+	
+	</html>
